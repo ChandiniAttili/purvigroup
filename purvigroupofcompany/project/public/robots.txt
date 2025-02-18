@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://avanthigroup.org/sitemap.xml
+Sitemap: https://purvigroup.org/sitemap.xml
