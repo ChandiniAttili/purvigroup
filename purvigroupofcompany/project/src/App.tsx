@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import BookingForm from "./components/BookingForm";
+import Applicationform from "./components/Applicationform"; 
+
 
 const images = ["y.jpeg", "y1.jpeg", "y2.jpeg", "y3.jpeg", "y4.jpeg", "y5.jpeg","y6.webp"];
 
@@ -38,6 +40,33 @@ function App() {
         </div>
       </main>
 
+       {/* Scrolling Job Notification */}
+       <div className="relative bg-orange-500 text-white text-lg font-bold py-2 overflow-hidden">
+  <div className="whitespace-nowrap animate-marquee">
+    ⚡ Foxconn Company Hiring Girls for New Jobs at Tukkuguda  – Apply Now! ⚡
+  </div>
+</div>
+
+    {/* Job Details Section */}
+    <div className="max-w-4xl mx-auto bg-white shadow-lg p-6 mt-6 rounded-lg">
+      <h2 className="text-2xl font-bold text-gray-800">Exciting Job Opportunities for Women at Foxconn</h2>
+      <p className="text-gray-700 mt-2">
+        Foxconn, a leading multinational electronics manufacturer, is offering job opportunities exclusively for women at its Tukkuguda facility.
+        Foxconn is renowned for assembling products for major global tech companies, including Apple, and is known for its advanced manufacturing
+        and supply chain capabilities.
+      </p>
+      <p className="text-gray-700 mt-2">
+        Candidates who have completed 10th, Intermediate, or Graduation are eligible to apply for various roles at the company. The offered salary is 
+        <span className="font-semibold"> ₹18,000</span>, along with <span className="font-semibold">free accommodation and food facilities</span>.
+      </p>
+      <p className="text-gray-700 mt-2">
+        This is a great opportunity for women looking to build a career in the electronics and manufacturing sector.
+      </p>
+    </div>
+
+    {/* Application Form */}
+    <Applicationform />
+
       <HeroSection />
       <ServicesSection />
 
@@ -61,6 +90,12 @@ function App() {
               <strong>Phone:</strong>{" "}
               <a href="tel:+919848000562" className="text-blue-600 hover:underline">
                 +91 9848000562
+              </a>
+            </p>
+            <p className="mb-4">
+              <strong>Land Number:</strong>{" "}
+              <a href="040 4521 4064" className="text-blue-600 hover:underline">
+              040 4521 4064
               </a>
             </p>
             <p className="mb-4">
