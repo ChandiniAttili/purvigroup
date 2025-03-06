@@ -28,16 +28,14 @@ function App() {
         </h1>
 
         {/* Full-Screen Image Slider Without Cropping */}
-        <div
-          className="relative mx-auto border-4 border-orange-500 overflow-hidden"
-          style={{ width: "1600px", height: "500px" }}
-        >
-          <img
-            src={images[currentIndex]}
-            alt="Company Image"
-            className="w-[1600px] h-[600px] object-fill transition-opacity duration-1000 ease-in-out"
-          />
-        </div>
+        {/* Full-Screen Image Slider - Responsive */}
+<div className="relative mx-auto border-4 border-orange-500 overflow-hidden w-full max-w-[1600px] h-[250px] sm:h-[350px] md:h-[500px]">
+  <img
+    src={images[currentIndex]}
+    alt="Company Image"
+    className="w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+  />
+</div>
       </main>
 
        {/* Scrolling Job Notification */}
